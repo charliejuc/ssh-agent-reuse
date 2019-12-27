@@ -26,3 +26,5 @@ else
 	eval $agent_data
 	echo $SSH_AGENT_PID > $agent_pid_file
 fi
+
+echo "export SSH_AGENT_PID=$SSH_AGENT_PID; export SSH_AUTH_SOCK=$SSH_AUTH_SOCK;"
